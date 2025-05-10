@@ -1,7 +1,7 @@
 # Builder stage
 FROM alpine:3.21.0 AS builder
 
-ARG KEEPALIVED_VERSION=2.3.2
+ARG KEEPALIVED_VERSION=2.3.3
 COPY tools/install.sh /install.sh
 RUN chmod +x /install.sh
 RUN /install.sh ${KEEPALIVED_VERSION}
