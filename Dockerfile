@@ -31,7 +31,6 @@ RUN apk --no-cache add \
 RUN addgroup -S keepalived_script && adduser -D -S -G keepalived_script keepalived_script
 COPY --from=builder /usr/sbin/keepalived /usr/sbin/keepalived
 COPY assets/keepalived.conf /etc/keepalived/keepalived.conf
-COPY assets/notify.sh /notify.sh
 COPY assets/entrypoint.sh /entrypoint.sh
 
 # workaround for https://github.com/acassen/keepalived/issues/2503
