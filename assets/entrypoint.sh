@@ -17,6 +17,7 @@ export ADVERTISE_INTERVAL=${ADVERTISE_INTERVAL:-'1'}
 export VIRTUAL_IPS=${VIRTUAL_IPS:-"192.168.2.100/32 dev $INTERFACE"}
 export PASSWORD=${PASSWORD:-'password'}
 export NOTIFY=${NOTIFY:-'/notify.sh'}
+export ADDON=${ADDON}
 
 # Ensure that the template file exists
 if [ ! -f "$CONFIG" ]; then
